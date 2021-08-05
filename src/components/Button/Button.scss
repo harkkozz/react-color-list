@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+.custom-button {
+  font-size: 22px;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  background-color: $teal;
+  color: $white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.custom-button:disabled {
+  background-color: $grey;
+  cursor: not-allowed;
+}

@@ -1,0 +1,44 @@
+@import '../../styles/variables';
+
+table {
+  max-width: 660px;
+}
+
+.list {
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  min-width: 800px;
+}
+
+.table-header-item:not(:first-child) {
+  text-align: start;
+  padding-left: 50px;
+}
+
+.color-box {
+  width: 100px;
+  height: 50px;
+  border-radius: 7px;
+  padding-bottom: 10px;
+}
+
+.color-content {
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: start;
+  padding-left: 50px;
+  width: 150px;
+}
+
+.color-hexa {
+  text-transform: uppercase;
+
+  button {
+    margin: 0;
+    font-size: 12px;
+    background-color: $danger;
+  }
+}

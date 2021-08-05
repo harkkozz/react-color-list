@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+
+input {
+  outline: none;
+  border: none;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 66px;
+}
+
+.custom-input {
+  padding: 5px 10px;
+  font-size: 20px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.error-message-container {
+  color: $danger;
+  margin-top: 5px;
+  margin-left: 5px;
+}
