@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Input.scss';
+import styles from './Input.module.scss';
 
 const Input = ({
   placeholder,
@@ -12,10 +12,10 @@ const Input = ({
   hasError,
   isRequired
 }) => (
-  <div className="input-container">
+  <div className={styles.inputContainer}>
     <input
       required={isRequired}
-      className="custom-input"
+      className={styles.customInput}
       type="text"
       name={name}
       placeholder={placeholder}
@@ -23,7 +23,7 @@ const Input = ({
       onChange={onInputChange}
       disabled={disabled}
     />
-    {hasError ? <span className="error-message-container">{errorMessage}</span> : null}
+    {hasError ? <span className={styles.errorMessageContainer}>{errorMessage}</span> : null}
   </div>
 );
 

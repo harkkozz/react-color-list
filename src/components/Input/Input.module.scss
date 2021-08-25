@@ -5,20 +5,20 @@ input {
   border: none;
 }
 
-.input-container {
+.inputContainer {
   display: flex;
   flex-direction: column;
   min-height: 66px;
 }
 
-.custom-input {
+.customInput {
   padding: 5px 10px;
   font-size: 20px;
   height: 30px;
   border-radius: 10px;
 }
 
-.error-message-container {
+.errorMessageContainer {
   color: $danger;
   margin-top: 5px;
   margin-left: 5px;

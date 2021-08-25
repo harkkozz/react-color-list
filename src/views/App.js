@@ -1,11 +1,11 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import './App.scss';
+import styles from './App.module.scss';
 import { addColor, fetchColors, removeColor } from '../apis';
-import ColorList from '../components/ColorList';
-import Button from '../components/Button';
-import Input from '../components/Input';
+import ColorList from '../components/ColorList/List';
+import Button from '../components/Button/Button';
+import Input from '../components/Input/Input';
 import LoadingSpinner from '../components/LoadingSpinner';
-import Dialog from '../components/Dialog';
+import Dialog from '../components/Dialog/Dialog';
 
 const initInputValue = { id: '', name: '', code: '#' };
 const FIELD_NAMES = {
@@ -95,8 +95,8 @@ function App() {
   const closeDialog = () => setDialog(false);
 
   return (
-    <div className="App">
-      <div className="container">
+    <div className={styles.app}>
+      <div className={styles.container}>
         <h1>Colors</h1>
         {colors.length ? (
           <ColorList
@@ -105,8 +105,8 @@ function App() {
             handleTableRowAction={openDialog}
           />
         ) : null}
-        <div className="actions-wrapper">
-          <form onSubmit={handleAddColor} className="form-container">
+        <div className={styles.actionsWrapper}>
+          <form onSubmit={handleAddColor} className={styles.formContainer}>
             <Input
               name={FIELD_NAMES.NAME}
               placeholder="Color name"

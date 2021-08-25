@@ -1,9 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Button.scss';
+import styles from './Button.module.scss';
 
 const Button = ({ buttonText, buttonType, onButtonClick, disabled }) => (
-  <button type={buttonType} onClick={onButtonClick} className="custom-button" disabled={disabled}>
+  <button
+    type={buttonType}
+    onClick={onButtonClick}
+    className={styles.customButton}
+    disabled={disabled}
+  >
     {buttonText}
   </button>
 );

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './LoadingSpinner.scss';
 import { ReactComponent as Loading } from '../../assets/icons/loading-spinner.svg';
 
 const LoadingSpinner = ({ isLoading }) =>

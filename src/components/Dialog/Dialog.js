@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Dialog.scss';
-import Button from '../Button';
+import styles from './Dialog.module.scss';
+import Button from '../Button/Button';
 
 const Dialog = ({ open, dialogTitle, message, cancelAction, okAction }) =>
   open ? (
-    <div className="dialog-container">
-      <div className="dialog">
+    <div className={styles.dialogContainer}>
+      <div className={styles.dialog}>
         <h2>{dialogTitle}</h2>
-        <div className="dialog-body">{message}</div>
-        <div className="dialog-actions">
+        <div>{message}</div>
+        <div className={styles.dialogActions}>
           <Button buttonText="Cancel" onButtonClick={cancelAction} />
           <Button buttonText="Delete" onButtonClick={okAction} />
         </div>

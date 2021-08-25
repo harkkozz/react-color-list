@@ -12,19 +12,19 @@ table {
   min-width: 800px;
 }
 
-.table-header-item:not(:first-child) {
+.tableHeaderItem:not(:first-child) {
   text-align: start;
   padding-left: 50px;
 }
 
-.color-box {
+.colorBox {
   width: 100px;
   height: 50px;
   border-radius: 7px;
   padding-bottom: 10px;
 }
 
-.color-content {
+.colorContent {
   text-transform: capitalize;
   font-size: 24px;
   font-weight: 600;
@@ -33,7 +33,7 @@ table {
   width: 150px;
 }
 
-.color-hexa {
+.colorHexContainer {
   text-transform: uppercase;
 
   button {
