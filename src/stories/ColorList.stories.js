@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import ColorList from '../components/ColorList';
+import ColorList from '../components/ColorList/List';
 import { colors } from '../apis';
 
 storiesOf('Color List', module).add('Color List - Example', () => (

@@ -1,10 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import Button from '../components/Button';
+import Button from '../components/Button/Button';
 
 storiesOf('Button', module)
-  .add('Button - Example', () => <Button buttonText="Click me" onButtonClick={() => action('clicked')('Button clicked')} />)
+  .add('Button - Example', () => (
+    <Button buttonText="Click me" onButtonClick={() => action('clicked')('Button clicked')} />
+  ))
   .add('Button - Submit', () => (
     <form
       onSubmit={e => {

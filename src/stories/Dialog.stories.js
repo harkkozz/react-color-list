@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Dialog from '../components/Dialog';
+import Dialog from '../components/Dialog/Dialog';
 import { action } from '@storybook/addon-actions';
 
 storiesOf('Dialog', module).add('Button - Example', () => (
