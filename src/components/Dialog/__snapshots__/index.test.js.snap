@@ -6,26 +6,24 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="dialog-container"
+        class="dialogContainer"
       >
         <div
           class="dialog"
         >
           <h2 />
+          <div />
           <div
-            class="dialog-body"
-          />
-          <div
-            class="dialog-actions"
+            class="dialogActions"
           >
             <button
-              class="custom-button"
+              class="customButton"
               type="button"
             >
               Cancel
             </button>
             <button
-              class="custom-button"
+              class="customButton"
               type="button"
             >
               Delete
@@ -37,26 +35,24 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="dialog-container"
+      class="dialogContainer"
     >
       <div
         class="dialog"
       >
         <h2 />
+        <div />
         <div
-          class="dialog-body"
-        />
-        <div
-          class="dialog-actions"
+          class="dialogActions"
         >
           <button
-            class="custom-button"
+            class="customButton"
             type="button"
           >
             Cancel
           </button>
           <button
-            class="custom-button"
+            class="customButton"
             type="button"
           >
             Delete

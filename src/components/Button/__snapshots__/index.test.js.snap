@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="custom-button"
+        class="customButton"
         type="button"
       >
         Button
@@ -15,7 +15,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="custom-button"
+      class="customButton"
       type="button"
     >
       Button

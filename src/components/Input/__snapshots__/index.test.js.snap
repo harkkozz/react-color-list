@@ -6,10 +6,10 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="input-container"
+        class="inputContainer"
       >
         <input
-          class="custom-input"
+          class="customInput"
           name="input-test"
           placeholder="placeholder"
           type="text"
@@ -20,10 +20,10 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="input-container"
+      class="inputContainer"
     >
       <input
-        class="custom-input"
+        class="customInput"
         name="input-test"
         placeholder="placeholder"
         type="text"
