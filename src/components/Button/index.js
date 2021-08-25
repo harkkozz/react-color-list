@@ -2,13 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Button.scss';
 
-const Button = ({ buttonText, buttonType, onButtonClick, disabled }) => {
-  return (
-    <button type={buttonType} onClick={onButtonClick} className="custom-button" disabled={disabled}>
-      {buttonText}
-    </button>
-  );
-};
+const Button = ({ buttonText, buttonType, onButtonClick, disabled }) => (
+  <button type={buttonType} onClick={onButtonClick} className="custom-button" disabled={disabled}>
+    {buttonText}
+  </button>
+);
 
 Button.defaultProps = {
   buttonType: 'button',

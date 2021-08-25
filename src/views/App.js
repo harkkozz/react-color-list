@@ -66,8 +66,6 @@ function App() {
         });
       } catch (error) {
         setErrors(error);
-      } finally {
-        setLoading(false);
       }
 
       setLoading(false);
@@ -83,10 +81,10 @@ function App() {
       setColors(newColors);
     } catch (error) {
       setErrors(error);
-    } finally {
-      setLoading(false);
-      setDialog(false);
     }
+
+    setLoading(false);
+    setDialog(false);
   };
 
   const openDialog = colorId => {
@@ -116,6 +114,7 @@ function App() {
               hasError={hasError[FIELD_NAMES.NAME]}
               value={inputValue.name}
               isRequired
+              errorMessage={errors}
             />
             <Input
               name={FIELD_NAMES.CODE}

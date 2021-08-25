@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import './Dialog.scss';
 import Button from '../Button';
 
-const Dialog = ({ open, dialogTitle, message, cancelAction, okAction }) => {
-  return open ? (
+const Dialog = ({ open, dialogTitle, message, cancelAction, okAction }) =>
+  open ? (
     <div className="dialog-container">
       <div className="dialog">
         <h2>{dialogTitle}</h2>
@@ -16,7 +16,6 @@ const Dialog = ({ open, dialogTitle, message, cancelAction, okAction }) => {
       </div>
     </div>
   ) : null;
-};
 
 Dialog.defaultProps = {
   open: false,

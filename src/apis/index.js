@@ -25,29 +25,23 @@ const colors = [
 const fetchColors = () =>
   new Promise(resolve => setTimeout(() => resolve(colors), Math.random() * 1500));
 
-const addColor = newColor => {
-  const data = new Promise(resolve => {
+const addColor = newColor =>
+  new Promise(resolve =>
     setTimeout(() => {
       colors.push(newColor);
       resolve(newColor);
-    }, Math.random() * 1000);
-  });
+    }, Math.random() * 1000)
+  );
 
-  return data;
-};
-
-const removeColor = colorId => {
-  const data = new Promise(resolve => {
+const removeColor = colorId =>
+  new Promise(resolve =>
     setTimeout(() => {
       const index = colors.findIndex(x => x.id === colorId);
       if (index >= 0) {
         colors.splice(index, 1);
       }
       resolve(colorId);
-    }, Math.random() * 500);
-  });
-
-  return data;
-};
+    }, Math.random() * 500)
+  );
 
 export { colors, fetchColors, addColor, removeColor };
